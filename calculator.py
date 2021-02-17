@@ -11,44 +11,44 @@ firstNum = int(input("Первое число: "))
 
 do = input("Операция: ")
 
-tooNum = int(input("Второе число: "))
+secNum = int(input("Второе число: "))
 
 
 #сложение
 
 if do == "+":
-	sum = firstNum + tooNum
+	sum = firstNum + secNum
 	print("Ответ: " + str(float(sum)))
 	
 #вычитание
 
 elif do == "-":
-	if firstNum > tooNum:
-		razn = firstNum - tooNum
+	if firstNum > secNum:
+		razn = firstNum - secNum
 		print(razn)
 	else:
-		razn = tooNum - firstNum
+		razn = secNum - firstNum
 		print("Ответ: " + str(float(razn)))
 
 #умножение
 
 elif do == "*":
-	umn = firstNum * tooNum
+	umn = firstNum * secNum
 	print("Ответ: " + str(float(umn)))
 	
 #деление
 
 elif do == "/":
-	div = firstNum / tooNum
+	div = firstNum / secNum
 	print("Ответ: " + str(float(div)))
 	
 #возведение в степень
 
 elif do == "**":
-	step = firstNum ** tooNum
+	step = firstNum ** secNum
 	print("Ответ: " + str(float(step)))
 	
 #извлечение квадратного корня
 
 elif (firstNum == 0 and do =="√"):
-	print(math.sqrt(tooNum))
+	print(math.sqrt(secNum))
